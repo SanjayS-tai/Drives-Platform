@@ -102,6 +102,10 @@ const CreateJob = () => {
         if (isFormValid) {
             console.log(formData)
             dispatch(actions.addDatas(formData))
+            SetFormData({jobId:'',companyName:'',jobTitle:'',jobRole:'',jobLocation:'',package:'',skills:'',
+                genderPreference:'',qualification:'',streams:'',yearOfPassing:'',backlog:'',sslc:'',diploma:'',graduate:'',gap:'',openings:'',interviewRound:'',mode:'',agreement:'',deposit:'',relocation:'',certificateSubmission:'',shifts:'',blockingPeriod:'',startsIn:'',endsIn:'',
+                emplotblityScore:'',interviewType:''
+            });
             setErrors({})
         }
         console.log(formData);
